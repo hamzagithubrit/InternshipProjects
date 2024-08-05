@@ -1,0 +1,536 @@
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.top-announcement {
+    background-color: #f8f8f8;
+    padding: 5px 20px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 14px;
+    color: #333;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure this is the highest to keep it above other elements */
+}
+
+.top-announcement .icon {
+    margin: 0 5px;
+}
+
+.shop-now {
+    color: #f00;
+    font-weight: bold;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+.shop-now:hover {
+    text-decoration: underline;
+}
+
+.header {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    top: 28px; /* Adjust this value based on the height of the top announcement */
+    width: 100%;
+    z-index: 999; /* Below top announcement but above other content */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    flex-direction: column;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #b2873a; /* Adjust the color to match the gold shade */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+     margin-left: auto; 
+    
+}
+
+.cart-count {
+    font-size: 14px;
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: #b2873a; /* Adjust the color to match the gold shade */
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 6px;
+    line-height: 1;
+}
+
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    padding: 10px 5px;
+    position: absolute;
+    top: 61px; /* Adjust based on the content height */
+    width: 100%;
+    z-index: 998; /* Ensure this is above the content but below the header */
+}
+
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.nav-item {
+    display: inline;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 4px 8px;
+}
+
+.nav-item a:hover {
+    color: #b2873a; /* Adjust the color to match the gold shade */
+}
+
+.content {
+    padding-top: 90px; /* Increased value to ensure content is not hidden behind the fixed header and navbar */
+    position: relative;
+    z-index: 1; /* Lower z-index to be below the navbar */
+}
+
+.big-picture {
+    position: relative;
+    width: 100%;
+    max-height: 600px; /* Adjust based on your image */
+    overflow: hidden;
+    z-index: 1; /* Ensure this is below the navbar and header */
+}
+
+.big-picture-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap to the next row */
+    justify-content: space-between; /* Add space between images */
+}
+
+.image-row {
+    display: flex;
+    width: 100%; /* Ensure each row takes full width */
+}
+
+.image-caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center caption text */
+    width: calc(100% - 10px); /* Adjust percentage and margin as needed */
+    margin: 10px; /* Add margin around captions */
+    font-weight: bold;
+}
+
+img {
+    width: 100%; /* Images take full width of their caption container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin: 5px 0; /* Add some margin between image and caption text */
+}
+
+.image-caption p {
+    color: black; /* Default color */
+}
+
+.image-caption p:hover {
+    color: gold; /* Hover color */
+}
+
+.content1 {
+    padding-top: 30px; /* Adjusted value to move the content up */
+    position: relative;
+    z-index: 1; /* Lower z-index to be below the navbar */
+}
+
+.big-picture1 {
+    position: relative;
+    width: 100%;
+    max-height: 600px; /* Adjust based on your image */
+    overflow: hidden;
+    z-index: 1; /* Ensure this is below the navbar and header */
+    margin-top: -20px; /* Negative margin to move the image up */
+}
+
+.big-picture1-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.shop-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.fabrication-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.fabrication-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.fabrication-card img {
+    border-radius: 50%;
+    width: 180px; /* Adjust the size as needed */
+    height: 180px; /* Ensure it is the same to keep it circular */
+    object-fit: cover;
+}
+
+.fabrication-card img:hover {
+    transform: scale(1.1); /* Zoom in on hover */
+}
+
+.fabrication-card p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.hum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; /* Ensure items stay in one row */
+    gap: 20px; /* Reduce the gap between images */
+    margin: 30px; /* Add some margin around the container */
+}
+
+.image-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% - 20px); /* Adjust the width to make images larger */
+    margin: 0; /* Remove margin */
+}
+
+.image-item img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px;
+}
+
+.image-item img:hover {
+    transform: scale(1.1); /* Zoom in on hover */
+}
+
+footer {
+    background-color: #f8f8f8; /* Light background color */
+    color: #333; /* Darker text color for contrast */
+    padding: 40px 20px;
+    box-sizing: border-box; /* Apply border-box sizing */
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px; /* Add space between sections */
+    box-sizing: border-box; /* Ensure children elements respect box-sizing */
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px; /* Ensure minimum width for better alignment */
+    margin: 10px;
+    box-sizing: border-box; /* Include padding and border in element size */
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #000; /* Black color for section titles */
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 14px;
+    margin: 5px 0;
+    line-height: 1.6; /* Improve readability */
+    color: #555; /* Soft dark color for text */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333; /* Default link color */
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #007BFF; /* Hover color for links */
+}
+
+.footer-section .social-icons a {
+    color: #333;
+    font-size: 20px;
+    margin-right: 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section .social-icons a:hover {
+    color: #007BFF;
+}
+
+.footer-section form {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box; /* Include padding and border in element size */
+}
+
+.footer-section form input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff; /* White input background */
+    color: #333;
+    transition: border-color 0.3s;
+    box-sizing: border-box; /* Include padding and border in element size */
+}
+
+.footer-section form input::placeholder {
+    color: #aaa; /* Lighter placeholder text color */
+}
+
+.footer-section form button {
+    padding: 8px;
+    border: none;
+    background-color: #007BFF; /* Blue background color */
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-sizing: border-box; /* Include padding and border in element size */
+}
+
+.footer-section form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer bottom */
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #e0e0e0; /* Light gray border */
+    margin-top: 20px;
+    box-sizing: border-box; /* Include padding and border in element size */
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    color: #777;
+    font-weight: bold;
+}
+
+/* Media Query for Devices with max-width of 768px */
+@media (max-width: 768px) {
+    .top-announcement {
+        font-size: 12px; /* Adjust font size for smaller screens */
+        padding: 5px 10px; /* Reduce padding */
+    }
+
+    .header {
+        top: 40px; /* Adjust based on the height of the top announcement */
+    }
+
+    .navbar {
+        top: 100x; /* Adjust based on the content height */
+    }
+
+    .content {
+        padding-top: 160px; /* Increased padding for mobile */
+        top: 1000x;
+    }
+
+    .container {
+        padding: 20px; /* Add some padding for smaller screens */
+        top: 1000x;
+    }
+
+    .logo {
+        font-size: 18px; /* Reduce logo size */
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .icons {
+        margin-left: 0; /* Reset margin for smaller screens */
+    }
+
+    .cart-count {
+        top: -10px;
+        right: -15px;
+        padding: 2px 4px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 8px; /* Increase spacing between items */
+        top: 100x;
+    }
+
+    .nav-item a {
+        padding: 8px;
+        font-size: 14px; /* Adjust font size for readability */
+    }
+
+    .image-caption {
+        width: calc(100% - 20px); /* Adjust margin for smaller screens */
+    }
+
+    .image-item {
+        width: calc(100% - 20px); /* Adjust width for better fit */
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        min-width: 100%;
+        margin: 10px 0;
+    }
+    .big-picture-img {
+        width: 100%;
+        height: 250px;
+        display: block;
+        margin-top: 90px;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        flex-direction: column;
+    }
+    .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    flex-direction: column;
+}
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #b2873a; /* Adjust the color to match the gold shade */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Push icons to the far right */
+  
+}
+.shop-now {
+    color: #f00;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap to the next row */
+    justify-content: space-between; /* Add space between images */
+}
+
+.image-row {
+    display: flex;
+    width: 80%; /* Ensure each row takes full width */
+    flex-direction: column;
+    margin-left: 34px;
+
+}
+
+.image-caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center caption text */
+    width: calc(100% - 10px); /* Adjust percentage and margin as needed */
+    margin: 10px; /* Add margin around captions */
+    font-weight: bold;
+}
+
+img {
+    width: 100%; /* Images take full width of their caption container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    margin: 5px 0; /* Add some margin between image and caption text */
+}
+
+.image-caption p {
+    color: black; /* Default color */
+}
+
+.image-caption p:hover {
+    color: gold; /* Hover color */
+}
+
+    
+}
