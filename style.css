@@ -1,0 +1,173 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+header {
+  background: lightgreen;
+  color: #fff;
+  padding-top: 20px;
+  min-height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin-right: 20px; /* Add space between logo and links */
+}
+
+.quiz-container {
+  width: 100%;
+  height: calc(100vh - 140px);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  padding: 30px;
+  margin-top: 90px;
+  position: relative; /* Positioning context for the image */
+}
+
+h2,
+h3 {
+  color: #333;
+}
+
+form {
+  margin-top: 20px;
+}
+
+footer {
+  background: lightgreen;
+  color: black;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.letter-m {
+  color: #ff0000;
+}
+.letter-i {
+  color: #ff7f00;
+}
+.letter-n {
+  color: #ffff00;
+}
+.letter-d {
+  color: #00ff00;
+}
+.letter-space {
+  color: #0000ff;
+}
+.letter-h {
+  color: #4b0082;
+}
+.letter-u {
+  color: #9400d3;
+}
+.letter-b {
+  color: #ff1493;
+}
+
+.quiz-word:nth-child(odd) {
+  color: #ff0000;
+}
+
+.quiz-word:nth-child(even) {
+  color: #ff7f00;
+}
+
+.quiz-names {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.quiz-name {
+  background-color: lightblue;
+  padding: 20px; /* Increase padding for more space inside the boxes */
+  margin-bottom: 20px; /* Increase margin-bottom for more space between the boxes */
+  border-radius: 10px; /* Increase border-radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Increase box-shadow for a more pronounced effect */
+  width: 80%; /* Adjust width as needed */
+  max-width: 200px; /* Set a maximum width for responsiveness */
+  height: 50px; /* Adjust height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quiz-name:nth-child(1) {
+  background-color: lightblue;
+}
+
+.quiz-name:nth-child(2) {
+  background-color: lightcoral;
+}
+
+.quiz-name:nth-child(3) {
+  background-color: lightgreen;
+}
+
+.start-quiz {
+  padding: 5px 10px; /* Padding */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.quiz1 {
+  color: #ff0000; /* Red color for quiz 1 */
+  background-color: #ffa07a; /* Light salmon background color */
+}
+
+.quiz2 {
+  color: #0000ff; /* Blue color for quiz 2 */
+  background-color: #87ceeb; /* Sky blue background color */
+}
+
+.quiz3 {
+  color: #008000; /* Green color for quiz 3 */
+  background-color: #34ebe8; /* Light green background color */
+}
+
+.quiz4 {
+  color: #800080; /* Purple color for quiz 4 */
+  background-color: #dda0dd; /* Plum background color */
+}
+
+/* New styles for the images */
+.small-image {
+  position: absolute;
+  right: 700px; /* Adjust the value to move the image to the left */
+  top: 100px; /* Adjust vertically */
+  width: 450px; /* Adjust width as needed */
+  height: 450px; /* Maintain aspect ratio */
+}
+
+.quiz-image {
+  position: absolute;
+  right: 90px; /* Adjust the value to move the image to the left */
+  top: 35%; /* Adjust vertically */
+  transform: translateY(-50%); /* Center vertically */
+  width: 600px; /* Adjust width as needed */
+  height: 680px; /* Maintain aspect ratio */
+}
