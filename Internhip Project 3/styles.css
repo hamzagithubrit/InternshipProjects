@@ -1,0 +1,160 @@
+body { 
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box1{
+  background-color: #c879b2;
+  border: 1px solid black;
+  width: 300px;
+  height:850px;
+}
+
+.box2{
+  background-color: rgb(13, 44, 64);
+  border: 1px solid black;
+  width: 350px;
+}
+.box3{
+  background-color: #c879b2;
+  border: 1px solid black;
+  width: 970px;
+  height: 570px;
+}
+
+.p1{
+  color: white;
+  font-size: 50px;
+  margin-top: 320px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.h1{
+  text-decoration: dotted white;
+}
+.p2{
+  color: white;
+  font-size: 20px;
+  margin-top: 350px;
+  margin-left: 40px;
+}
+.p3{
+  color: white;
+  font-size: 20px;
+  margin-top: 60px;
+  margin-left: 40px;
+}
+.word1{
+  border-bottom: 3px dotted;
+}
+.word2 {
+  border-bottom: 2px dotted;
+}
+.vertical-text {
+  writing-mode: vertical-rl; 
+  transform: rotate(180deg);
+  color: white; 
+  padding: 30px; 
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.circle2{
+  width: 970px;
+height: 280px;
+margin-top: 70px;
+
+}
+.circle1{
+  width: 300px;
+  height: 280px;
+  margin-left: 20px;
+}
+
+.box4{
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  width: 975px;
+  height: 570px;
+}
+
+.box5{
+  background-color:#33C9E1;
+  width: 326px;
+  height: 800px;
+  position: absolute;
+  z-index: 1;
+  margin-left: 978px;
+  margin-top: 850px;
+}
+.box6{
+  background-color: #FFFFFF;
+  width: 326px;
+  height: 570px;
+}
+.heading{
+  margin-top: 200px;
+  margin-left: 300px;
+}
+.p4{
+  font-size: 18px;
+ margin-left: 300px;
+ margin-top: 40px;
+ color: grey
+}
+
+.p5{
+  margin-top: 200px;
+  margin-left: 20px;
+  color: white;
+  font-size: 18px;
+}
+
+.background-image-div {
+  width: 100%;  
+  height: 1000px;  
+  background-image: url('img3.jpg');  
+  background-size: cover; 
+  background-repeat: no-repeat;  
+  background-position: center; 
+  display: block;
+}
+
+.box7{
+  background-color: rgb(13, 44, 64);
+  width:700px;
+  height: 550px;
+  margin-top: 320px;
+}
+
+.vertical{
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.p6{
+  color: lightgrey;
+  font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
